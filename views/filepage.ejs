@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shery Code</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+
+  <div id="main">
+
+    <div id="left">
+      <div id="logo">
+        <img src="../images/shery.jpg" alt="">
+        <h2>SHERY CODE</h2>
+    </div>
+      <form action="/createfile" method="post">
+        <input type="text" name="filename" placeholder="Enter file name">
+        <hr>
+        <div id="container">
+          <%if(files.length>0){%>
+            <%files.forEach(function(val){%>
+              <div class="files">
+                <h5><%=val%></h5>
+                <h5><a href="/openfile/<%=val%>"><i class="ri-share-box-line"></i></a><a href="/delete/<%=val%>"><i class="ri-delete-bin-5-line"></i></a></h5>
+              </div>
+              <% })%>
+
+          <%}else{%>
+            <div>
+              <h5>No Files Here</h5>
+            </div>
+          <%}%>
+        </div>
+      </form>
+    </div>
+    <div id="rigth">
+      <div id="top">
+        <a href="/" style="text-decoration: none;color: black;position: absolute;top: 2%;right: 3%;"><button style="padding:3px 10px;border-radius: 5px;border: 2px solid black;">Back</button></a>
+        <div class="box">
+          <h5><%=a%></h5>
+        </div>
+
+      </div>
+      <div id="btm">
+       <form action="/update/<%=a%>" method="post">
+        <input type="submit" value="Save" id="save">
+
+           <input type="text" name="updatedata" id="pp" autocomplete="off" value=<%=data%>></input>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+#main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-family: gilroy;
+  overflow: hidden;
+}
+#left{
+  width: 23vw;
+  height: 100vh;
+  background-color: rgb(174, 174, 219);
+  padding: 3vmax 2vmax;
+  filter: drop-shadow(2px 2px 4px rgb(48, 48, 48));
+}
+#logo{
+  width: 18vw;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#logo img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#logo h2{
+  font-family: digital geometric;
+  color: rgb(48, 48, 48);
+}
+input{
+  width: 18vw;
+  height: 6vh;
+  margin: 3vmax 0vmax;
+  border: 2px solid grey;
+  border-radius: 8px;
+  outline-color:rgb(102, 102, 196);
+  padding-left: 10px;
+}
+#container{
+  width: 17vw;
+  height: 60vh;
+  margin-left: .7vmax;
+  /* background-color: rgb(139, 139, 139); */
+  margin-top: 2vmax;
+}
+#container .files{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.files a{
+  margin-left: 15px;
+  color: rgb(48, 48, 48);
+  text-decoration: none;
+  font-size: 18px;
+
+}
+#container h5{
+  font-size: 18px;
+  line-height: 40px;
+  color: rgb(48, 48, 48) ;
+}
+#rigth{
+  width: 78vw;
+  height: 100vh;
+  background-color: rgb(235, 235, 255);
+  
+}
+#rigth #top{
+  width: 100%;
+  height: 7vh;
+  background-color: rgb(216, 216, 255);
+  border-bottom: 1px solid rgb(187, 199, 211);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#rigth #top .box{
+  width: 6vw;
+  height: 4vh;
+  background-color: rgb(121, 121, 121);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  color: white;
+  filter: drop-shadow(2px 2px 2px rgb(48, 48, 48));
+  margin-left: 40px;
+}
+#rigth #btm{
+  width: 100%;
+  height: 94vh;
+  padding: 0vmax 2vmax;
+  overflow-y: auto;
+  position: relative;
+}
+#rigth #btm p{
+  font-size: 20px;
+  line-height: 45px;
+  color: rgb(73, 73, 73);
+}
+#rigth #btm #save{
+  width: 5vw;
+  height: 4.5vh;
+  padding: 0;
+  position: fixed;
+  bottom: 0%;
+  right: 3%;
+  border-radius: 100px;
+  font-family: gilroy;
+  font-size: 15px;
+}
+#pp{
+  width:74vw;
+  height: 70vh;
+  background-color:transparent;
+  border: 1px dashed rgb(134, 134, 134);
+  outline-style:none;
+  line-height: 40px;
+  /* padding: 1vmax; */
+  font-size: 19px;
+  font-family: Gilroy;
+  overflow: hidden;
+ flex-wrap: nowrap;
+ letter-spacing: 2px;
+ padding-bottom: 30vmax;
+ overflow: auto;
+}
